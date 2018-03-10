@@ -1,13 +1,11 @@
 {
   "name": "mpvue-toast",
   "version": "0.0.2",
-  "description": "A Vue.js project",
+  "description": "mpvue-toast is a toast plugin for mpvue",
   "author": "linrui <linrui1994@foxmail.com>",
   "main": "src/Toast.vue",
   "module": "src/Toast.vue",
-  "files": [
-    "src"
-  ],
+  "files": ["src"],
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
@@ -71,9 +69,5 @@
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"]
 }

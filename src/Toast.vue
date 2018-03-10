@@ -30,12 +30,12 @@ export default {
     iconClass: String,
     visible: Boolean
   },
-  data() {
+  data () {
     return {
       showToast: false
-    };
+    }
   },
-  created() {
+  created () {
     this.showToast = this.visible
     console.log(111)
     let timer
@@ -50,17 +50,17 @@ export default {
           console.log('doit')
           this.showToast = false
           this.$emit('update:visible', false)
-        }, this.duration);
+        }, this.duration)
       }
     })
   },
   watch: {
-    visible(v) {
+    visible (v) {
       this.showToast = v
     }
   },
   computed: {
-    customClass() {
+    customClass () {
       const classes = []
       classes.push(this.position, this.className)
       this.showToast ? classes.push('fadeIn') : classes.push('fadeOut')

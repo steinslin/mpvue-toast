@@ -1,12 +1,8 @@
 import Vue from 'vue'
 import App from './App'
-// import Toast from './toast.js'
-// import Toast from './Toast.vue'
 
 Vue.config.productionTip = false
 App.mpType = 'app'
-
-// Vue.component('toastt', Toast)
 
 const app = new Vue(App)
 app.$mount()

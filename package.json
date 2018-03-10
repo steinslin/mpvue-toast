@@ -1,20 +1,22 @@
 {
   "name": "mpvue-toast",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Vue.js project",
-  "author": "linrui <linrui@gridsum.com>",
-  "private": true,
-  "main": "src/toast.js",
-  "files": ["src"],
+  "author": "linrui <linrui1994@foxmail.com>",
+  "main": "src/Toast.vue",
+  "module": "src/Toast.vue",
+  "files": [
+    "src"
+  ],
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
-    "lint": "eslint --ext .js,.vue src",
-    "build:toast": "webpack --config build.toast.js"
+    "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "mpvue": "^1.0.1"
+    "mpvue": "^1.0.1",
+    "mpvue-toast": "^0.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

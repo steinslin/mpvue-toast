@@ -4,11 +4,14 @@
   "description": "A Vue.js project",
   "author": "linrui <linrui@gridsum.com>",
   "private": true,
+  "main": "src/toast.js",
+  "files": ["src"],
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "build:toast": "webpack --config build.toast.js"
   },
   "dependencies": {
     "mpvue": "^1.0.1"

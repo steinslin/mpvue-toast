@@ -2,6 +2,12 @@
 
 > mpvue-toast is a toast plugin for mpvue.
 
+## install
+
+```bash
+npm install mpvue-toast --save
+```
+
 ## Usage
 
 ```html
@@ -15,7 +21,7 @@
 </template>
 
 <script>
-import toast from '@/Toast.vue'
+import toast from 'mpvue-toast'
 // import img from 'img.jpg'
 // import '@/icon.css'
 
@@ -40,11 +46,6 @@ export default {
 </script>
 ```
 
-## screenshots
-
-![](https://raw.githubusercontent.com/linrui1994/mpvue-toast/master/static/1.jpeg)
-![](https://raw.githubusercontent.com/linrui1994/mpvue-toast/master/static/2.jpeg)
-![](https://raw.githubusercontent.com/linrui1994/mpvue-toast/master/static/3.jpeg)
 ## props
 
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
@@ -58,3 +59,10 @@ export default {
 | position | `Toast`的显示位置 | String | - | center |
 | visible | 控制`Toast`的显示，支持`sync` | Boolean | - | - |
 
+## TODO
+
+## screenshots
+
+![](https://raw.githubusercontent.com/linrui1994/mpvue-toast/master/static/1.jpeg)
+![](https://raw.githubusercontent.com/linrui1994/mpvue-toast/master/static/2.jpeg)
+![](https://raw.githubusercontent.com/linrui1994/mpvue-toast/master/static/3.jpeg)

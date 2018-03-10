@@ -37,9 +37,9 @@ export default {
 
 ## screenshots
 
-![]()
-![]()
-![]()
+![](https://raw.githubusercontent.com/linrui1994/mpvue-toast/master/static/1.jpeg)
+![](https://raw.githubusercontent.com/linrui1994/mpvue-toast/master/static/2.jpeg)
+![](https://raw.githubusercontent.com/linrui1994/mpvue-toast/master/static/3.jpeg)
 ## props
 
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |

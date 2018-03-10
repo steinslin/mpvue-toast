@@ -8,17 +8,22 @@
 <template>
   <div>
     <toast message="hello from toast" :visible.sync="visible"></toast>
+    <toast message="hello from toast" :visible.sync="visible" :img="img"></toast>
+    <toast message="hello from toast" :visible.sync="visible" icon-class="iconfont icon-shoucang"></toast>
     <button @click='setVisible(false)'>toggle toast</button>
   </div>
 </template>
 
 <script>
 import toast from '@/Toast.vue'
+// import img from 'img.jpg'
+// import '@/icon.css'
 
 export default {
   data () {
     return {
-      visible: false
+      visible: false,
+      // img
     }
   },
 

@@ -7,9 +7,9 @@
 
 <script>
 // import toast from 'mpvue-toast'
-import toast from '@/Toast.vue'
-import img from '../../../static/20953049.jpeg'
-import '@/icon.css'
+import toast from 'mpvue-toast'
+// import img from '../../../static/20953049.jpeg'
+// import '@/icon.css'
 export default {
   data () {
     return {
@@ -27,5 +27,9 @@ export default {
       this.visible = !this.visible
     }
   },
+
+  created() {
+    console.log(this)
+  }
 }
 </script>

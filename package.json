@@ -1,6 +1,6 @@
 {
   "name": "mpvue-toast",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "mpvue-toast is a toast plugin for mpvue",
   "author": "linrui <linrui1994@foxmail.com>",
   "main": "src/Toast.vue",
@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "mpvue": "^1.0.1",
-    "mpvue-toast": "^0.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

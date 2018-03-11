@@ -37,17 +37,14 @@ export default {
   },
   created () {
     this.showToast = this.visible
-    console.log(111)
     let timer
     this.$watch('showToast', v => {
       if (timer) {
         clearTimeout(timer)
-        console.log('clear')
         timer = null
       }
       if (v) {
         timer = setTimeout(() => {
-          console.log('doit')
           this.showToast = false
           this.$emit('update:visible', false)
         }, this.duration)

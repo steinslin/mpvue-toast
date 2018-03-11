@@ -1,5 +1,5 @@
 <template>
-  <div class="toast-wrapper" :class="customClass" v-show="visible">
+  <div class="toast-wrapper" :class="customClass" v-show="!animateEnd">
     <i class="toast-icon" :class="iconClass" v-if="iconClass"></i>
     <div class='toast-img-wrapper' v-if="img">
       <img class='toast-img' :src="img" />
@@ -25,7 +25,7 @@ export default {
       validator(t) {
         return t === 'fade' || t === 'slide'
       },
-      default: 'slide'
+      default: 'fade'
     },
     message: String,
     className: String,
@@ -39,7 +39,8 @@ export default {
   },
   data () {
     return {
-      showToast: false
+      showToast: false,
+      animateEnd: true
     }
   },
   created () {
@@ -61,6 +62,19 @@ export default {
   watch: {
     visible (v) {
       this.showToast = v
+    },
+    showToast (v) {
+      let timer
+      if (timer) {
+        clearTimeout(timer)
+        timer = null
+      }
+      if (v) {
+        this.animateEnd = false
+      }
+      timer = setTimeout(() => {
+        this.animateEnd = !v
+      }, this.animate ? 400 : 0);
     }
   },
   computed: {
@@ -76,6 +90,9 @@ export default {
 </script>
 
 <style scoped>
+.toast-wrapper[hidden] {
+  z-index: -100;
+}
 .toast-wrapper {
   position: fixed;
   display: inline-block;

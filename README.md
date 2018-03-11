@@ -2,6 +2,10 @@
 
 > mpvue-toast is a toast plugin for mpvue.
 
+## Screenshots
+
+![](https://raw.githubusercontent.com/linrui1994/mpvue-toast/master/static/u.gif)
+
 ## install
 
 ```bash
@@ -64,9 +68,3 @@ export default {
 
 - [ ] more animate support
 - [ ] api
-
-## screenshots
-
-![](https://raw.githubusercontent.com/linrui1994/mpvue-toast/master/static/1.jpeg)
-![](https://raw.githubusercontent.com/linrui1994/mpvue-toast/master/static/2.jpeg)
-![](https://raw.githubusercontent.com/linrui1994/mpvue-toast/master/static/3.jpeg)

@@ -25,7 +25,7 @@ export default {
       validator(t) {
         return t === 'fade' || t === 'slide'
       },
-      default: 'fade'
+      default: 'slide'
     },
     message: String,
     className: String,

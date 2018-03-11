@@ -2,14 +2,14 @@
   <div>
     <toast message="hello from toast" :visible.sync="visible" position="center"></toast>
     <button @click='setVisible(false)'>toggle toast</button>
+    <!-- <button @click='setVisible(false)'>toggle toast</button>
     <button @click='setVisible(false)'>toggle toast</button>
     <button @click='setVisible(false)'>toggle toast</button>
     <button @click='setVisible(false)'>toggle toast</button>
     <button @click='setVisible(false)'>toggle toast</button>
     <button @click='setVisible(false)'>toggle toast</button>
     <button @click='setVisible(false)'>toggle toast</button>
-    <button @click='setVisible(false)'>toggle toast</button>
-    <button @click='setVisible(false)'>toggle toast</button>
+    <button @click='setVisible(false)'>toggle toast</button> -->
   </div>
 </template>
 

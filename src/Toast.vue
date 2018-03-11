@@ -20,6 +20,13 @@ export default {
       type: Number,
       default: 2000
     },
+    transition: {
+      type: 'String',
+      validator(t) {
+        return t === 'fade' || t === 'slide'
+      },
+      default: 'slide'
+    },
     message: String,
     className: String,
     img: String,
@@ -60,7 +67,7 @@ export default {
     customClass () {
       const classes = []
       classes.push(this.position, this.className)
-      this.showToast ? classes.push('fadeIn') : classes.push('fadeOut')
+      this.showToast && classes.push(this.transition)
       this.animate && classes.push('animated')
       return classes.join(' ')
     }
@@ -87,23 +94,29 @@ export default {
   margin: auto;
 }
 .animated {
-  transition: opacity .5s;
+  transition: opacity .4s, transform .4s;
 }
-.toast-wrapper.fadeIn {
+.toast-wrapper.fade, .toast-wrapper.slide {
   opacity: 1;
-}
-.toast-wrapper .fadeOut {
-  opacity: 0;
 }
 .toast-wrapper.top{
   top: 50px;
 }
+.toast-wrapper.top.slide {
+  transform: translate3d(-50%, 20px, 0)
+}
 .toast-wrapper.bottom{
   bottom: 50px;
+}
+.toast-wrapper.bottom.slide {
+  transform: translate3d(-50%, -20px, 0)
 }
 .toast-wrapper.center{
   top: 50%;
   transform: translate3d(-50%, -50%, 0);
+}
+.toast-wrapper.center.slide {
+  transform: translate3d(-50%, calc(-50% + 20px), 0);
 }
 .toast-text {
   word-wrap: break-word;

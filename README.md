@@ -61,7 +61,7 @@ export default {
 | className  | `Toast`的class           | String  | -    | -      |
 | img        | 图片                      | String  | -    | -      |
 | iconClass  | 图标class，可以使用 `iconfont` | String  | -    | -      |
-| position   | `Toast`的显示位置            | String  | -    | center |
+| position   | `Toast`的显示位置            | String  | `top` `center` `bottom` | `center` |
 | visible    | 控制`Toast`的显示，支持`sync`   | Boolean | -    | -      |
 
 ## TODO

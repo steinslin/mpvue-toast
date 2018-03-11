@@ -13,7 +13,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "mpvue": "^1.0.1",
+    "mpvue": "^1.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

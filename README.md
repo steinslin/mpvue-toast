@@ -66,6 +66,9 @@ export default {
 
 ## TODO
 
-- [ ] more animate support
 - [ ] api
 - [ ] test
+
+## Other Components
+
+- [mpvue-ripple](https://github.com/linrui1994/mpvue-ripple)

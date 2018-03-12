@@ -5,7 +5,9 @@
   "author": "linrui <linrui1994@foxmail.com>",
   "main": "src/Toast.vue",
   "module": "src/Toast.vue",
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
@@ -13,7 +15,8 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "mpvue": "^1.0.1"
+    "mpvue": "^1.0.1",
+    "mpvue-ripple": "^0.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -46,6 +49,7 @@
     "mpvue-loader": "^1.0.1",
     "mpvue-template-compiler": "^1.0.1",
     "mpvue-webpack-target": "^1.0.0",
+    "node-sass": "^4.7.2",
     "opn": "^5.1.0",
     "optimize-css-assets-webpack-plugin": "^2.0.0",
     "ora": "^1.2.0",
@@ -53,6 +57,8 @@
     "postcss-mpvue-wxss": "^1.0.0",
     "px2rpx-loader": "^0.1.8",
     "rimraf": "^2.6.0",
+    "sass": "^1.0.0-beta.5.3",
+    "sass-loader": "^6.0.7",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
     "url-loader": "^0.5.8",
@@ -68,5 +74,9 @@
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"]
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
